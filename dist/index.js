@@ -20,6 +20,28 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
 
+function _interopNamespace(e) {
+  if (e && e.__esModule) return e;
+  var n = Object.create(null);
+  if (e) {
+    Object.keys(e).forEach(function (k) {
+      if (k !== 'default') {
+        var d = Object.getOwnPropertyDescriptor(e, k);
+        Object.defineProperty(n, k, d.get ? d : {
+          enumerable: true,
+          get: function () {
+            return e[k];
+          }
+        });
+      }
+    });
+  }
+  n['default'] = e;
+  return Object.freeze(n);
+}
+
+var React__namespace = /*#__PURE__*/_interopNamespace(React);
+
 /**
  * --------------------------------------------------------------------------
  * simple-react-modal
@@ -27,7 +49,7 @@ var React = require('react');
  * --------------------------------------------------------------------------
  */
 function useOnClick(ref, handler) {
-    React.useEffect(function () {
+    React__namespace.useEffect(function () {
         var listener = function (event) {
             // Do nothing if clicking ref's element or descendent elements
             if (!ref.current || ref.current.contains(event.target)) {
@@ -50,7 +72,7 @@ ___$insertStyle("/**\n * -------------------------------------------------------
  * Licensed under MIT (https://github.com/B-techiexyz/simple-react-modal/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
-var useEffect = React.useEffect, useRef = React.useRef;
+var useEffect = React__namespace.useEffect, useRef = React__namespace.useRef;
 function Modal(props) {
     var ref = useRef();
     useEffect(function () {
@@ -64,10 +86,10 @@ function Modal(props) {
     useOnClick(ref, function () {
         return props.onCloseOutsideClick && props.onClose ? props.onClose() : undefined;
     });
-    return props.visible ? (React.createElement("div", { className: "container", role: "presentation" },
-        React.createElement("div", { className: "backDrop", "aria-hidden": "true" }),
-        React.createElement("div", { className: "innerContainer", role: "none presentation", tabIndex: -1 },
-            React.createElement("div", { className: "innerPaper", ref: ref }, props.children)))) : null;
+    return props.visible ? (React__namespace.createElement("div", { className: "container", role: "presentation" },
+        React__namespace.createElement("div", { className: "backDrop", "aria-hidden": "true" }),
+        React__namespace.createElement("div", { className: "innerContainer", role: "none presentation", tabIndex: -1 },
+            React__namespace.createElement("div", { className: "innerPaper", ref: ref }, props.children)))) : null;
 }
 
 exports.default = Modal;
