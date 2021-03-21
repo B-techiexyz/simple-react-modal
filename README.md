@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-npm install --save react-just-calendar
+npm install --save react-just-modal
 ```
 
 ## Usage
