@@ -1,5 +1,5 @@
 {
-  "name": "@b-techiexyz/simple-react-modal",
+  "name": "react-just-modal",
   "version": "1.0.3",
   "description": "a simple modal component for react",
   "main": "dist/index.js",
@@ -31,17 +31,10 @@
     "typescript": "^4.2.3"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "files": [
     "dist"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "dependencies": {
-    "rollup-pluginutils": "^2.8.2"
-  },
-  "registry": "https://npm.pkg.github.com/Btechiexyz"
+  ]
 }
