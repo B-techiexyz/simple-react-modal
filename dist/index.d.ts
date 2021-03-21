@@ -6,12 +6,12 @@
  */
 import * as React from "react";
 import "./styles.scss";
-export declare type ICounterProps = {
+export declare type ModalProps = {
     className?: string;
     visible: boolean;
     onClose?: () => void;
     onCloseOutsideClick?: boolean;
     children: React.ReactNode;
 };
-declare function Modal(props: ICounterProps): JSX.Element | null;
+declare function Modal(props: ModalProps): JSX.Element | null;
 export default Modal;

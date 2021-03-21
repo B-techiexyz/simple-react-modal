@@ -9,7 +9,7 @@ import * as React from "react";
 import { useOnClick } from "./hookshelper";
 import "./styles.scss";
 
-export type ICounterProps = {
+export type ModalProps = {
   className?: string;
   visible: boolean;
   onClose?: () => void;
@@ -19,7 +19,7 @@ export type ICounterProps = {
 
 const { useEffect, useRef } = React
 
-function Modal (props: ICounterProps) {
+function Modal (props: ModalProps) {
   const ref: any = useRef();
 
   useEffect(() => {
@@ -32,14 +32,14 @@ function Modal (props: ICounterProps) {
   }, [props.visible]);
 
   useOnClick(ref, () =>
-  props.onCloseOutsideClick && props.onClose ? props.onClose() : undefined
+    props.onCloseOutsideClick && props.onClose ? props.onClose() : undefined
   );
 
   return props.visible ? (
     <div className={"container"} role="presentation">
       <div className={"backDrop"} aria-hidden="true"></div>
       <div className={"innerContainer"} role="none presentation" tabIndex={-1}>
-        <div className={"innerPaper"} ref={ref}>
+        <div className={`innerPaper ${props.className}`} ref={ref}>
           {props.children}
         </div>
       </div>

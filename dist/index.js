@@ -89,7 +89,7 @@ function Modal(props) {
     return props.visible ? (React__namespace.createElement("div", { className: "container", role: "presentation" },
         React__namespace.createElement("div", { className: "backDrop", "aria-hidden": "true" }),
         React__namespace.createElement("div", { className: "innerContainer", role: "none presentation", tabIndex: -1 },
-            React__namespace.createElement("div", { className: "innerPaper", ref: ref }, props.children)))) : null;
+            React__namespace.createElement("div", { className: "innerPaper " + props.className, ref: ref }, props.children)))) : null;
 }
 
 exports.default = Modal;
