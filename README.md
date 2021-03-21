@@ -1,4 +1,4 @@
-# simple-react-modal
+# react-just-modal
 > a simple modal component for react
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)[![Downloads](https://img.shields.io/npm/dt/react-just-modal.svg)](https://www.npmjs.com/package/react-just-modal)
