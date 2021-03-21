@@ -11,7 +11,6 @@
     "type": "git",
     "url": "git://github.com/B-techiexyz/simple-react-modal.git"
   },
-  "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
@@ -36,5 +35,12 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "modal",
+    "react-modal",
+    "simple-modal",
+    "react modal"
   ]
 }
