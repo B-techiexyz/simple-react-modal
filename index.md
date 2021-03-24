@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+# react-just-modal
+> a simple modal component for react
 
-You can use the [editor on GitHub](https://github.com/B-techiexyz/simple-react-modal/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)[![Downloads](https://img.shields.io/npm/dt/react-just-modal.svg)](https://www.npmjs.com/package/react-just-modal)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+npm install --save react-just-modal
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
 
-### Jekyll Themes
+```tsx
+import React, { Component } from 'react'
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/B-techiexyz/simple-react-modal/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+import Modal from 'react-just-modal'
 
-### Support or Contact
+class Example extends Component {
+  render() {
+    return (
+      <Modal visible={true} onCloseOutsideClick={true}>
+        <div>Simple modal</div>
+      </Modal>
+    )
+  }
+}
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## simple-react-modal Props
+
+| Prop                           | Type       | Description                                                                           |
+| :----------------------------- | :--------- | :------------------------------------------------------------------------------------ |
+| **`visible`**           | `boolean`    | to open or close modal |
+| **`onCloseOutsideClick`**           | `boolean`    | to open or close modal when outside click |
+| **`onClose`**           | `function`    | callback to close modal |
+| **`className`**           | `string`    | style |
+
+
+## Screenshots
+
+<img width="1675" alt="Screenshot" src="https://user-images.githubusercontent.com/42475339/111897736-a5913480-8a47-11eb-8221-1845583eb1c2.png">
+
+
+## Authors
+
+* [azadhmhd](https://github.com/azadhmhd)
+
+
+## License
+
+MIT © [Btechiexyz](https://github.com/Btechiexyz)
